@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= "X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <title>Crypto Converter</title>
+  
+   
+</head>
+  
+<body>
+  <div class="border-solid border-2 border-green-500 ml-6 mr-6">
+    
+    <h1 class="heading text-center display-xl">
+        Currency Converter</h1>
+  
+    <br>
+    <div class="container">
+        <div class="main  border-solid border-2 border-green-300 ml-12 txt-xl mr-12">
+         <div id="box ">
+        
+            Amount to Convert : 
+        
+       
+ 
+    <input type="text"  placeholder="0.00" class="bg-white h-12  px-5 pr-10 text-xl focus:outline-none ml-6 border-solid border-2 border-green-300">
+          
+               
+         </div>
+
+         
+  <br>
+  <br>
+            <div class="flex justify-between row-span-2">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend border-solid border-2 border-green-300">
+                            <span class="input1">From</span>
+                        </div class="form-control1 " >
+                        <select  id="From">
+                            <option value="1.00">USD</option>
+                            <option value=".027">AED</option>
+                            <option value=".0074">ARS</option>
+                            <option value=".70">AUD</option>
+                            <option value=".52">BGN</option>
+                            <option value=".19">BRL</option>
+                            <option value="1.00">BSD</option>
+                            <option value=".78">CAD</option>
+                            <option value="1.05">CHF</option>
+                            <option value=".0011">CLP</option>
+                            <option value=".15">CNY</option>
+                            <option value=".00024">COP</option>
+                            <option value=".041">CZK</option>
+                            <option value=".014">DKK</option>
+                            <option value=".019">DOP</option>
+                            <option value=".052">EGP</option>
+                            <option value="1.02">EUR</option>
+                           <option value=".0074">JPY</option>
+                           <option value=".016">RUB</option>
+                            <option value=".27">SAR</option>
+</select>
+
+
+
+                    </div>
+                </div>
+  
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend border-solid border-2 border-green-300 ">
+                            <span class="input2">To</span>
+                        </div class="form-control2 ">
+                        <select  id="To">
+                            <option value="1.00">USD</option>
+                            <option value=".027">AED</option>
+                            <option value=".0074">ARS</option>
+                            <option value=".70">AUD</option>
+                            <option value=".52">BGN</option>
+                            <option value=".19">BRL</option>
+                            <option value="1.00">BSD</option>
+                            <option value=".78">CAD</option>
+                            <option value="1.05">CHF</option>
+                            <option value=".0011">CLP</option>
+                            <option value=".15">CNY</option>
+                            <option value=".00024">COP</option>
+                            <option value=".041">CZK</option>
+                            <option value=".014">DKK</option>
+                            <option value=".019">DOP</option>
+                            <option value=".052">EGP</option>
+                            <option value="1.02">EUR</option>
+                           <option value=".0074">JPY</option>
+                           <option value=".016">RUB</option>
+                            <option value=".27">SAR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+           
+            <div class="text-center">
+  
+           <button class="btn px-6 py-2 text-white bg-red-600" id="cbtn">
+         
+                  Convert
+              </button>
+  
+              
+                <button class="btn1 px-6 py-2 text-white bg-red-600" id="cbtn2" >
+                   Reset
+              </button>
+            </div>
+  
+        </div>
+        <br>
+        <br>
+        <div id="cryptEnd" class="text-center">
+  
+           <h2 class=" multiplyFig heading text-left display-2   border-solid border-2 border-green-300
+            -600 ml-12 mr-12 h-12 " >Converted Amount :
+           
+            <span class="endValue" style="color:green;">
+           </span>
+            </h2>
+        </div>
+    </div>
+
+   
+
+
+
+
+<script type="text/javascript">
+   function myFunction() {
+    let elem = document.querySelectorAll(".form-control1.option.value ");
+
+    elem.forEach(element=>{
+        element.addEventListener("click", e =>{
+           (e.target.innerHTML);
+        });
+    })
+}
+
+function myFunction() {
+    let elem2 = document.querySelectorAll("from.form-control1.option.value ");
+
+    elem.forEach(element=>{
+        element.addEventListener("click", e =>{
+            console.log(e.target.innerHTML);
+        });
+    })
+}
+    
+       function conV() { 
+        (elem) * (elem2);
+    }
+    const con = document.getElementById("");addEventListener("click",  conV );
+    onclick =conV();
+        document.getElementByID("cryptEnd").innerHTML= "Converted Amount: " + "" var conVx;
+    
+    });
+   
+}   
+  
+    
+    function clear()
+    document.getElementById("cbtn2");addEventListener("click",clear);
+        //window.location.reload();
+
+        document.getElementsByClassName("cryptEnd").innerHTML = "Converted Amount:";
+    });
+    </script>
+    </body>
+    </html>
